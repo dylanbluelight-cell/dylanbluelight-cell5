@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabaya 1945: Memoryscape Revolusi Fisik | Edukasi Sejarah Interaktif</title>
+  <meta name="description" content="Eksplorasi interaktif historiografi Revolusi Fisik 1945 di Surabaya melalui analisis spasial dan memori kolektif 6 monumen bersejarah Kota Pahlawan.">
+  <meta name="keywords" content="Sejarah Surabaya, 10 November 1945, Monumen Bambu Runcing, Monumen Polisi Istimewa, Monumen Pers Perjuangan, Mobil Mallaby, Palagan Gunung Sari, TMP 10 November, Arek Suroboyo, Bung Tomo">
+  <meta name="author" content="Arsip Riset Spasial Revolusi Surabaya">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Surabaya 1945: Memoryscape Revolusi Fisik">
+  <meta property="og:description" content="Rekonstruksi interaktif revolusi fisik Surabaya melalui 6 monumen bersejarah, peta spasial taktis, orasi audio, dan kuis edukasi.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- YouTube IFrame API (Streaming Fallback) -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+
+  <!-- Background Ambient Atmosphere -->
+  <div class="ambient-fx" aria-hidden="true"></div>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar" id="mainNavbar">
+    <a href="#" class="nav-brand" aria-label="Beranda Surabaya 1945">
+      <div class="brand-emblem">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffd700">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <h1>SURABAYA 1945</h1>
+        <span>Memoryscape Revolusi</span>
+      </div>
+    </a>
+
+    <nav aria-label="Menu Utama">
+      <ul class="nav-links">
+        <li><a href="#peta-spasial" class="nav-link">Peta Spasial</a></li>
+        <li><a href="#monumen-sejarah" class="nav-link">6 Monumen Kunci</a></li>
+        <li><a href="#garis-waktu" class="nav-link">Garis Waktu</a></li>
+        <li><a href="#orasi-audio" class="nav-link">Orasi & Audio</a></li>
+        <li><a href="#kuis-edukasi" class="nav-link">Kuis Edukasi</a></li>
+        <li><a href="#arsip-riset" class="nav-link">Arsip Dokumen</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Background Music Toggle Button -->
+      <button class="bgm-nav-btn" id="bgmNavBtn" title="Putar Lagu Latar: Indonesia Pusaka (Shanna Shannon)">
+        <span class="bgm-disc-icon" id="bgmNavDisc">💿</span>
+        <span id="bgmNavText">Lagu: Indonesia Pusaka</span>
+        <div class="audio-pulse" id="bgmNavPulse" style="display:none;"><span></span><span></span><span></span></div>
+      </button>
+
+      <button class="audio-ctrl-btn" id="globalAudioToggle" title="Nyalakan/Matikan Suasana Suara Latar 1945">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+        </svg>
+        <span>Suasana 1945</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="beranda">
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span>🏛️ Rekonstruksi Riset Historis & Spasial</span>
+        </div>
+        <h1 class="hero-title">
+          EPISENTRUM <span class="highlight">REVOLUSI FISIK</span> DAN MEMORI KOLEKTIF SURABAYA
+        </h1>
+        <p class="hero-desc">
+          Ketika Jakarta mengedepankan diplomasi kabinet, Surabaya mewujud secara organik sebagai arena pertempuran fisik terbuka paling destruktif melawan Divisi India ke-5 Inggris. Ruang tata kota Surabaya kini berdiri sebagai <em>memoryscape</em>—arsip 3 dimensi yang mendokumentasikan anatomi revolusi kemerdekaan secara granular.
+        </p>
+        <div class="hero-buttons">
+          <a href="#peta-spasial" class="btn-primary" id="btnExploreMap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+            </svg>
+            <span>Buka Peta Spasial Interaktif</span>
+          </a>
+          <a href="#monumen-sejarah" class="btn-secondary" id="btnExploreMonuments">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Jelajahi 6 Monumen Kunci</span>
+          </a>
+        </div>
+
+        <!-- Dynamic Counter Stats -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-val">21 Hari</div>
+            <div class="stat-label">Durasi Perang Kota</div>
+            <div class="stat-desc">Dari pemboman 10 Nov hingga Palagan Gunung Sari 28 Nov 1945</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">Divisi ke-5</div>
+            <div class="stat-label">Kekuatan Sekutu</div>
+            <div class="stat-desc">Didukung kapal perang laut, tank Sherman, dan pesawat pembom</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">21 Agustus</div>
+            <div class="stat-label">Hari Juang Polri</div>
+            <div class="stat-desc">Proklamasi Polisi M. Jasin memutus komando kolonial Jepang</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">Buick 8</div>
+            <div class="stat-label">Mobil Mallaby</div>
+            <div class="stat-desc">Casus belli meledaknya ultimatum penyerahan tanpa syarat Inggris</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 1: INTERACTIVE SPATIAL MAP SECTION -->
+    <section class="map-section" id="peta-spasial">
+      <div class="section-header">
+        <span class="section-tag">Analisis Geospasial Urban</span>
+        <h2 class="section-title">Peta Spasial Memoryscape 1945</h2>
+        <p class="section-subtitle">
+          Klik pin penanda taktis untuk menganalisis pergerakan pasukan, titik baku tembak strategis, dan transformasi bangunan kolonial menjadi monumen perjuangan rakyat.
+        </p>
+      </div>
+
+      <div class="map-container-box">
+        <!-- Interactive Viewport -->
+        <div class="map-viewport" id="mapViewport">
+          <!-- Populated by JavaScript SVG Canvas & Interactive Radar Pins -->
+        </div>
+
+        <!-- Map Drawer Info Panel -->
+        <aside class="map-drawer-panel" id="mapDrawerPanel" aria-live="polite">
+          <div>
+            <div class="drawer-header">
+              <span class="drawer-category" id="drawerCategory">Senjata Rakyat & Dimensi Spiritual</span>
+              <h3 class="drawer-title" id="drawerTitle">Monumen Bambu Runcing</h3>
+            </div>
+            <div class="drawer-body">
+              <span class="drawer-theme-tag" id="drawerTheme">Asimetri Persenjataan & Mobilisasi Teologis</span>
+              <p class="drawer-summary" id="drawerSummary">
+                Simbol ketimpangan kapasitas militer teknologi modern versus keberanian laskar rakyat yang didorong eskatologi keagamaan dan doa Kyai Bambu Runcing.
+              </p>
+              <div class="drawer-quote-box" id="drawerQuote">
+                "Bismillahi, Ya Hafidzu, Allahu Akbar — Doa Kyai Subchi untuk laskar pejuang sebelum menerjang desingan peluru modern."
+              </div>
+              <div class="drawer-specs-list" id="drawerSpecsList">
+                <!-- Injected via app.js -->
+              </div>
+            </div>
+          </div>
+          <div class="drawer-footer">
+            <button class="btn-drawer-explore" id="btnDrawerExplore">
+              <span>Buka Kajian Riset Lengkap</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+              </svg>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- MODULE 2: 6 DEEP-DIVE MONUMENT EXPEDITIONS -->
+    <section class="monuments-section" id="monumen-sejarah">
+      <div class="section-header">
+        <span class="section-tag">Kajian 6 Entitas Spasial Utama</span>
+        <h2 class="section-title">Rekonstruksi Monumen Bersejarah Surabaya</h2>
+        <p class="section-subtitle">
+          Berdasarkan sintesis Laporan Riset Historis: telaah asimetri alutsista, transisi institusi negara, hegemoni informasi, casus belli perang, martir pelajar, hingga nekropolis pahlawan.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="monuments-filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-filter="all">Semua Monumen</button>
+        <button class="filter-btn" data-filter="bambu-runcing">Bambu Runcing</button>
+        <button class="filter-btn" data-filter="polisi-istimewa">Polisi Istimewa</button>
+        <button class="filter-btn" data-filter="pers-perjuangan">Pers Perjuangan</button>
+        <button class="filter-btn" data-filter="mobil-mallaby">Mobil Mallaby</button>
+        <button class="filter-btn" data-filter="palagan-gunungsari">Palagan Gunung Sari</button>
+        <button class="filter-btn" data-filter="tmp-sepuluh-november">TMP 10 November</button>
+      </div>
+
+      <!-- Monument Cards Grid -->
+      <div class="monuments-cards-grid" id="monumentsGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- MODULE 3: INTERACTIVE TIMELINE REVOLUSI -->
+    <section class="timeline-section" id="garis-waktu">
+      <div class="section-header">
+        <span class="section-tag">Kronologi Taktis 1945</span>
+        <h2 class="section-title">Garis Waktu Resolusi Fisik Surabaya</h2>
+        <p class="section-subtitle">
+          Geser atau klik simpul waktu untuk menelusuri rentetan peristiwa krusial dari proklamasi kemerdekaan hingga palagan terakhir di perbukitan selatan.
+        </p>
+      </div>
+
+      <div class="timeline-scrubber-wrapper">
+        <!-- Interactive Progress Scrubber -->
+        <div class="timeline-stepper-bar" id="timelineStepperBar">
+          <!-- Injected via app.js -->
+        </div>
+
+        <!-- Active Detail Card -->
+        <div class="timeline-card-active" id="timelineCardActive">
+          <div class="timeline-card-date-badge">
+            <span class="day-year" id="timelineDateBadge">17 Agustus 1945</span>
+            <span class="loc-tag" id="timelineLocTag">📍 Surabaya & Jakarta</span>
+          </div>
+          <div class="timeline-card-details">
+            <h3 id="timelineTitle">Proklamasi Kemerdekaan RI</h3>
+            <p id="timelineSummary">
+              Berita kemerdekaan bocor melalui telegraf klandestin meski kantor berita Domei berusaha menerapkan sensor militer ketat sesuai mandat Sekutu.
+            </p>
+            <div class="timeline-nav-buttons">
+              <button class="timeline-btn-nav" id="btnTimelinePrev">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                <span>Sebelumnya</span>
+              </button>
+              <button class="timeline-btn-nav" id="btnTimelineNext">
+                <span>Berikutnya</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 4: ORATOR SPEECH & AUDIO SIMULATOR -->
+    <section class="speech-section" id="orasi-audio">
+      <div class="section-header">
+        <span class="section-tag">Perang Informasi & Gelombang Frekuensi</span>
+        <h2 class="section-title">Corong Orasi & Simulasi Suara 1945</h2>
+        <p class="section-subtitle">
+          Dengarkan simulasi pembacaan naskah pidato bersejarah otentik dan pelajari bagaimana agitasi audio dan mesin cetak jurnalis dipandang sama mematikannya dengan senapan mesin oleh Sekutu.
+        </p>
+      </div>
+
+      <div class="speech-player-box">
+        <!-- Speech Selection Pills -->
+        <div class="speech-selector-pills" id="speechPills">
+          <!-- Injected via app.js -->
+        </div>
+
+        <div class="speech-stage">
+          <div class="speech-avatar-frame" id="speechAvatar">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#ffd700">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+            </svg>
+          </div>
+          <div class="speech-meta">
+            <h3 id="speechTitle">Pidato Berapi-Api Bung Tomo (10 November 1945)</h3>
+            <div class="speaker-tag" id="speechSpeaker">🎙️ Sutomo (Bung Tomo) via RRI Surabaya</div>
+            <div class="context-note" id="speechContext">Disiarkan melalui gelombang radio ke seluruh penjuru Nusantara untuk merespons ultimatum Inggris.</div>
+          </div>
+        </div>
+
+        <!-- Transcript Window -->
+        <div class="speech-transcript-scroll" id="speechTranscript">
+          <!-- Text filled dynamically -->
+        </div>
+
+        <!-- Audio Action Bar -->
+        <div class="speech-controls-row">
+          <button class="btn-play-speech" id="btnPlaySpeech">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <span>Dengarkan Orasi Sejarah</span>
+          </button>
+
+          <!-- Interactive Built-in Sound Effects Synthesizer -->
+          <div class="audio-sfx-cluster">
+            <span style="font-size: 0.78rem; color: var(--text-dim); margin-right: 0.4rem;">Efek Audio Taktis:</span>
+            <button class="btn-sfx" onclick="playSfx('morse')">📡 Sandi Morse Klandestin</button>
+            <button class="btn-sfx" onclick="playSfx('siren')">🚨 Sirine Bahaya Udara</button>
+            <button class="btn-sfx" onclick="playSfx('cannon')">💥 Meriam Artileri Sekutu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 5: EDU-QUIZ & LITERASI SEJARAH -->
+    <section class="quiz-section" id="kuis-edukasi">
+      <div class="section-header">
+        <span class="section-tag">Evaluasi Pemahaman Akademis</span>
+        <h2 class="section-title">Uji Literasi Sejarah: Arek Suroboyo 1945</h2>
+        <p class="section-subtitle">
+          Uji wawasan Anda melalui 10 pertanyaan berbobot tinggi yang disarikan langsung dari analisis historiografi dan dokumen sumber sejarah.
+        </p>
+      </div>
+
+      <div class="quiz-card-wrapper">
+        <!-- Active Question View -->
+        <div id="quizCardActive">
+          <div class="quiz-header-bar">
+            <span class="quiz-progress-text" id="quizProgress">Pertanyaan 1 dari 10</span>
+            <span class="quiz-score-badge" id="quizScore">Skor: 0 Poin</span>
+          </div>
+
+          <div class="quiz-question-box">
+            <h3 id="quizQuestionText">Pertanyaan sedang dimuat...</h3>
+          </div>
+
+          <div class="quiz-options-list" id="quizOptionsList">
+            <!-- Injected via app.js -->
+          </div>
+
+          <div class="quiz-feedback-box" id="quizFeedbackBox">
+            <!-- Immediate rationale injected here -->
+          </div>
+
+          <div class="quiz-action-bar">
+            <button class="btn-next-question" id="btnNextQuestion" style="display: none;">
+              <span>Lanjut ke Soal Berikutnya</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Result View -->
+        <div class="quiz-result-view" id="quizResultView">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE 6: ACADEMIC REFERENCES & RESEARCH BIBLIOGRAPHY -->
+    <section class="academic-section" id="arsip-riset">
+      <div class="section-header">
+        <span class="section-tag">Transparansi Sumber Primer & Sekunder</span>
+        <h2 class="section-title">Arsip Historiografi & Sumber Rujukan</h2>
+        <p class="section-subtitle">
+          Daftar 20+ literatur riset, surat kabar, berkas arsip kepolisian, dan wawancara komunitas sejarah yang menjadi fondasi dokumen riset Google Docs.
+        </p>
+      </div>
+
+      <div class="academic-table-container">
+        <input 
+          type="text" 
+          id="academicSearchInput" 
+          class="academic-search-input" 
+          placeholder="Cari sumber referensi (misal: RRI, Antara, Polisi Istimewa, Mallaby, Begandring)..."
+          aria-label="Pencarian referensi dokumen"
+        >
+
+        <div class="ref-cards-grid" id="refCardsGrid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: DEEP SCHOLARLY READER -->
+  <div class="modal-backdrop" id="monumentModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header-hero">
+        <button class="modal-close-btn" onclick="closeMonumentModal()" aria-label="Tutup Dialog">✕</button>
+        <span class="modal-meta-pill" id="modalMetaPill">Tema Historiografi</span>
+        <h3 class="modal-header-title" id="modalTitle">Nama Monumen</h3>
+        <p class="modal-header-loc" id="modalLoc">Lokasi & Tahun</p>
+      </div>
+
+      <div class="modal-scrollable-body">
+        <div class="modal-quote-banner" id="modalQuote">
+          "Kutipan Sejarah..."
+        </div>
+
+        <div id="modalContentSections">
+          <!-- Deep-dive scholarly paragraphs injected by app.js -->
+        </div>
+
+        <div class="modal-section-block">
+          <h4><span></span>Spesifikasi Taktis & Identitas Spasial</h4>
+          <table class="modal-specs-table" id="modalSpecsTable">
+            <!-- Table details injected by app.js -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4>SURABAYA 1945: MEMORYSCAPE REVOLUSI</h4>
+        <p>
+          Platform rekonstruksi spasial edukatif dan arsip digital interaktif sejarah perjuangan mempertahankan Proklamasi Kemerdekaan Republik Indonesia di Kota Pahlawan.
+        </p>
+        <p style="margin-top: 0.8rem; font-size: 0.78rem; color: var(--gold-antique);">
+          Sumber Utama: Laporan Riset Historis dan Analisis Spasial (Google Documents 2026).
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h5>Navigasi Halaman</h5>
+        <ul>
+          <li><a href="#beranda">Beranda Utama</a></li>
+          <li><a href="#peta-spasial">Peta Spasial Memoryscape</a></li>
+          <li><a href="#monumen-sejarah">6 Monumen Bersejarah</a></li>
+          <li><a href="#garis-waktu">Garis Waktu Peristiwa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h5>Fitur Interaktif</h5>
+        <ul>
+          <li><a href="#orasi-audio">Simulasi Orasi Bung Tomo</a></li>
+          <li><a href="#kuis-edukasi">Kuis Literasi Sejarah</a></li>
+          <li><a href="#arsip-riset">Daftar Pustaka & Arsip</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Memoryscape Revolusi Surabaya 1945. Dibangun untuk tujuan edukasi sejarah kebangsaan dan pelestarian memori kolektif.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING BGM MUSIC PLAYER DOCK -->
+  <aside class="floating-bgm-dock" id="floatingBgmDock" aria-label="Pemutar Musik Latar Belakang">
+    <button class="bgm-dock-collapse-btn" id="bgmDockCollapseBtn" title="Sembunyikan / Tampilkan Pemutar Musik">
+      <span id="bgmDockArrow">▼</span>
+    </button>
+    <div class="bgm-dock-inner">
+      <!-- Spinning Vinyl Art -->
+      <div class="vinyl-record-wrap" id="vinylRecordWrap">
+        <div class="vinyl-disc" id="vinylDisc">
+          <div class="vinyl-groove"></div>
+          <div class="vinyl-center">
+            <span>🇮🇩</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track Info -->
+      <div class="bgm-track-meta">
+        <div class="bgm-track-badge">
+          <span class="live-dot"></span>
+          <span id="bgmSourceBadge">File Download Lokal</span>
+        </div>
+        <h4 class="bgm-track-title" id="bgmTrackTitle">Indonesia Pusaka</h4>
+        <p class="bgm-track-artist">Cover by Shanna Shannon</p>
+        
+        <!-- Progress bar -->
+        <div class="bgm-progress-container">
+          <span class="bgm-time-text" id="bgmCurrentTime">00:00</span>
+          <div class="bgm-progress-bar-wrap" id="bgmProgressWrap" title="Klik untuk menggeser durasi lagu">
+            <div class="bgm-progress-bar-fill" id="bgmProgressFill"></div>
+          </div>
+          <span class="bgm-time-text" id="bgmDuration">03:30</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="bgm-dock-controls">
+        <button class="bgm-ctrl-icon-btn btn-play-pause-bgm" id="btnPlayPauseBgm" title="Putar / Jeda Lagu">
+          <svg id="bgmPlayIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <svg id="bgmPauseIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+          </svg>
+        </button>
+
+        <div class="bgm-vol-wrap">
+          <button class="bgm-ctrl-icon-btn btn-vol-toggle" id="btnBgmVolToggle" title="Bisukan Suara">
+            <svg id="bgmVolIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+            </svg>
+            <svg id="bgmMuteIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+              <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+            </svg>
+          </button>
+          <input type="range" class="bgm-vol-slider" id="bgmVolSlider" min="0" max="100" value="45" title="Volume Lagu">
+        </div>
+
+        <!-- Switch Source Menu -->
+        <div class="bgm-source-dropdown-wrap">
+          <button class="bgm-switch-src-btn" id="btnSwitchSrc" title="Ganti Sumber Pemutaran">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+            <span>Sumber</span>
+          </button>
+          <div class="bgm-source-menu" id="bgmSourceMenu">
+            <button class="bgm-menu-item active" id="srcLocalBtn">
+              <span>📁 File Download Lokal (MP4)</span>
+            </button>
+            <button class="bgm-menu-item" id="srcYoutubeBtn">
+              <span>▶️ YouTube Stream Resmi (Online)</span>
+            </button>
+            <button class="bgm-menu-item" id="srcCustomFileBtn">
+              <span>📂 Pilih File Lain dari Laptop...</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden Native Audio Tag & Custom File Picker -->
+    <audio id="localBgmAudio" loop preload="auto">
+      <source src="audio/indonesia_pusaka.mp4" type="audio/mp4">
+      <source src="audio/indonesia_pusaka.m4a" type="audio/mp4">
+    </audio>
+    <input type="file" id="customAudioInput" accept="audio/*,video/mp4" style="display:none;">
+    
+    <!-- Hidden YouTube Player Container for API -->
+    <div id="ytPlayerContainer" style="position:fixed;bottom:-9999px;left:-9999px;width:1px;height:1px;opacity:0.001;pointer-events:none;"></div>
+  </aside>
+
+  <!-- Welcoming Toast for Browser Autoplay Compliance -->
+  <div class="bgm-welcome-toast" id="bgmWelcomeToast">
+    <div class="toast-icon">🇮🇩</div>
+    <div class="toast-text">
+      <strong>Lagu Latar: Indonesia Pusaka</strong>
+      <span>Cover merdu oleh Shanna Shannon</span>
+    </div>
+    <button class="toast-btn-play" id="btnToastPlay">
+      <span>▶️ Putar Lagu</span>
+    </button>
+    <button class="toast-btn-close" id="btnToastClose" title="Tutup Notifikasi">✕</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
